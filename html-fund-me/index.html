@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>筹资App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 24px; /* Adjust font size */
+      color: #333; /* Change text color */
+      margin-top: 40px; /* Add some top margin */
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      width: 80%;
+      margin: 10px auto; /* Centering buttons horizontally */
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: block;
+      width: 80%;
+      margin: 10px auto; /* Centering input horizontally */
+      box-sizing: border-box;
+      max-width: 300px; /* Added max-width */
+    }
+    label {
+      font-size: 16px;
+      display: block;
+      margin: 10px 0;
+    }
+
+    /* Media query for smaller screens */
+    @media (min-width: 768px) {
+      body {
+        max-width: 400px; /* Limit body width on larger screens */
+        margin: 0 auto; /* Center body horizontally */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>欢迎使用智能合约筹资平台</h1>
+  <button id="connectButton">连接钱包</button>
+  <button id="balanceButton">获取智能合约余额</button>
+  <button id="withdrawButton">从智能合约提现到钱包</button>
+  <label for="ethAmount">ETH 数量</label>
+  <input id="ethAmount" placeholder="0.1" type="number"/>
+  <button type="button" id="fundButton">向智能合约筹款</button>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
